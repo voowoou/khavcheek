@@ -3,5 +3,8 @@ packages:
   - server
   - shared
 
+allowBuilds:
+  esbuild: true
+
 ignoredBuiltDependencies:
   - esbuild
