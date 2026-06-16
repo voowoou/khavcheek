@@ -1,0 +1,20 @@
+:root,
+[data-theme='light'] {
+  --color-primary: #000;
+  --color-secondary: #4e4e4e;
+  --color-muted: #848484;
+  --color-bg: #fffffb;
+  --color-border: #eaeaea;
+  --color-success: #749c75;
+  --color-failure: #ad2831;
+}
+
+[data-theme='dark'] {
+  --color-primary: #fff;
+  --color-secondary: #b1b1b1;
+  --color-muted: #848484;
+  --color-bg: #292926;
+  --color-border: #484848;
+  --color-success: #96e698;
+  --color-failure: #ff717b;
+}
