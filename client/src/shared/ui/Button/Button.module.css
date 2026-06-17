@@ -1,0 +1,46 @@
+.button {
+  min-width: 40px;
+  min-height: 40px;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
+  color: var(--color-secondary);
+  transition: all var(--transition);
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--color-button-bg-hover);
+  color: var(--color-primary);
+}
+
+.button:active {
+  color: var(--color-primary);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-primary);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  color: var(--color-muted);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.button.isLoading::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top-color: var(--text-color, #ffffff);
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  flex-shrink: 0;
+}

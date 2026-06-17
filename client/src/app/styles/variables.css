@@ -2,11 +2,11 @@
   /* Colors -- delete after themes implemention */
   --color-primary: #000;
   --color-secondary: #4e4e4e;
-  --color-muted: #848484;
+  --color-muted: #eaeaea;
   --color-bg: #fffffb;
-  --color-border: #eaeaea;
   --color-success: #749c75;
   --color-failure: #ad2831;
+  --color-button-bg-hover: #f6f6f6;
 
   /* Fonts */
   --font-size-xl: 4rem; /* 64px */

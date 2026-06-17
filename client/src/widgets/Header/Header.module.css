@@ -1,0 +1,28 @@
+.header {
+  height: 60px;
+  width: 100%;
+  background-color: var(--color-bg);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.breadcrumps {
+  color: var(--color-secondary);
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  fill: lightcoral;
+}
