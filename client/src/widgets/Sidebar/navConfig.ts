@@ -1,3 +1,4 @@
+import type { FileRoutesByPath } from '@tanstack/react-router';
 import {
   ClockHistoryIcon,
   CollectionIcon,
@@ -10,7 +11,7 @@ import {
 interface NavElement {
   icon: SVGComponent;
   title: string;
-  route: string;
+  route?: keyof FileRoutesByPath;
   child?: React.ReactNode;
 }
 
@@ -18,31 +19,30 @@ export const NAV_CONFIG: NavElement[] = [
   {
     icon: PencilSquareIcon,
     title: 'Записать рецепт',
-    route: '',
+    route: '/recipes/new',
   },
   {
     icon: SearchIcon,
     title: 'Поиск',
-    route: '',
   },
   {
     icon: HouseIcon,
     title: 'На главную',
-    route: '',
+    route: '/',
   },
   {
     icon: CollectionIcon,
-    title: 'Кулинарная книга',
-    route: '',
+    title: 'Мои рецепты',
+    route: '/recipes/cookbook',
   },
   {
     icon: ClockHistoryIcon,
     title: 'Недавние рецепты',
-    route: '',
+    route: '/recipes/recent',
   },
   {
     icon: QuestionLgIcon,
     title: 'О приложении',
-    route: '',
+    route: '/about',
   },
 ] as const;
