@@ -2,11 +2,19 @@
   min-width: 40px;
   min-height: 40px;
   padding: 10px;
+  display: flex;
+  gap: 20px;
   border-radius: var(--border-radius);
   font-size: var(--font-size-m);
   line-height: var(--line-height-m);
   color: var(--color-secondary);
   transition: all var(--transition);
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  flex-shrink: 0;
 }
 
 .button:hover {

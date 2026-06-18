@@ -1,2 +1,9 @@
 export { default as BrightnessHighIcon } from './icons/brightness-high.svg?react';
 export { default as TranslateIcon } from './icons/translate.svg?react';
+export { default as CaretRightIcon } from './icons/caret-right.svg?react';
+export { default as ClockHistoryIcon } from './icons/clock-history.svg?react';
+export { default as CollectionIcon } from './icons/collection.svg?react';
+export { default as HouseIcon } from './icons/house.svg?react';
+export { default as PencilSquareIcon } from './icons/pencil-square.svg?react';
+export { default as QuestionLgIcon } from './icons/question-lg.svg?react';
+export { default as SearchIcon } from './icons/search.svg?react';
