@@ -8,11 +8,10 @@
     "types": ["vite/client"],
     "skipLibCheck": true,
 
-    "ignoreDeprecations": "6.0",
-    "baseUrl": ".",
     "paths": {
       "vite/client": ["./../node_modules/vite/client.d.ts"],
       "@/*": ["./src/*"],
+      "shared": ["../shared/index.ts"],
     },
 
     /* Bundler mode */

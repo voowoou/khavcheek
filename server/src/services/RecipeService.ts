@@ -1,5 +1,5 @@
 import { Recipe } from '../models/Recipe';
-import { CreateRecipeDto } from '../../../shared/src/dto/recipe.dto';
+import { CreateRecipeDto } from 'shared';
 
 class RecipeServiceClass {
   async create(recipe: CreateRecipeDto) {
