@@ -1,0 +1,78 @@
+/* trigger */
+.trigger {
+  border: none;
+  border-radius: var(--border-radius-s);
+  height: 40px;
+  padding: 10px 16px;
+  font-size: var(--font-size-s);
+  background: none;
+  transition: background var(--transition);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+  line-height: var(--line-height-s);
+}
+
+.icon {
+  color: var(--color-secondary);
+  height: 16px;
+  width: 16px;
+  transition: color var(--transition);
+}
+
+.trigger:hover {
+  cursor: pointer;
+  background: var(--color-button-bg-hover);
+
+  .icon {
+    color: var(--color-primary);
+  }
+}
+
+.trigger:active {
+  background: var(--color-button-bg-hover);
+
+  .icon {
+    color: var(--color-primary);
+  }
+}
+
+.trigger:focus-visible {
+  outline: 2px solid var(--color-primary);
+}
+
+.trigger[data-placeholder] {
+  color: var(--color-secondary);
+}
+
+/* content */
+.content {
+  position: relative;
+  top: 4px;
+  border: var(--border-style);
+  border-radius: var(--border-radius-m);
+  background: var(--color-bg);
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: var(--font-size-s);
+  overflow: clip;
+}
+
+.item {
+  width: 100%;
+  padding: 10px 16px;
+  transition: background var(--transition);
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
+  color: var(--color-secondary);
+}
+
+.item:hover {
+  cursor: pointer;
+  background: var(--color-button-bg-hover);
+  outline: none;
+  color: var(--color-primary);
+}

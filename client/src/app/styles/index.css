@@ -1,7 +1,7 @@
 @import './reset.css';
 @import './fonts.css';
 @import './variables.css';
-@import './themes.css';
+/*@import './themes.css';*/
 
 body {
   font-family: Geist, Inter, Arial, Helvetica, sans-serif;

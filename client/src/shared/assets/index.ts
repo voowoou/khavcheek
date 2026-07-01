@@ -7,3 +7,4 @@ export { default as HouseIcon } from './icons/house.svg?react';
 export { default as PencilSquareIcon } from './icons/pencil-square.svg?react';
 export { default as QuestionLgIcon } from './icons/question-lg.svg?react';
 export { default as SearchIcon } from './icons/search.svg?react';
+export { default as CaretDownFill } from './icons/caret-down-fill.svg?react';
