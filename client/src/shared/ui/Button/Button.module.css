@@ -1,14 +1,64 @@
 .button {
   min-width: 40px;
   min-height: 40px;
+  width: fit-content;
   padding: 10px;
   display: flex;
-  gap: 20px;
-  border-radius: var(--border-radius);
-  font-size: var(--font-size-m);
-  line-height: var(--line-height-m);
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--border-radius-s);
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
   color: var(--color-secondary);
-  transition: all var(--transition);
+  transition: background var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: var(--color-secondary);
+  color: var(--color-bg);
+}
+
+.secondary {
+  background: none;
+  color: var(--color-secondary);
+}
+
+.primary:hover {
+  background: var(--color-muted-hover);
+  color: var(--color-bg);
+}
+
+.secondary:hover {
+  cursor: pointer;
+  background-color: var(--color-bg-hover);
+  color: var(--color-primary);
+}
+
+.primary:active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.secondary:active {
+  color: var(--color-primary);
+  background: var(--color-muted);
+}
+
+.primary:disabled {
+  cursor: not-allowed;
+  background: var(--color-muted);
+}
+
+.secondary:disabled {
+  cursor: not-allowed;
+  color: var(--color-muted);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
 }
 
 .icon {
@@ -17,23 +67,8 @@
   flex-shrink: 0;
 }
 
-.button:hover {
-  cursor: pointer;
-  background-color: var(--color-button-bg-hover);
-  color: var(--color-primary);
-}
-
-.button:active {
-  color: var(--color-primary);
-}
-
-.button:focus-visible {
-  outline: 2px solid var(--color-primary);
-}
-
-.button:disabled {
-  cursor: not-allowed;
-  color: var(--color-muted);
+.textButton {
+  padding: 10px 16px;
 }
 
 @keyframes spin {
@@ -44,11 +79,11 @@
 
 .button.isLoading::before {
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border: 2px solid transparent;
   border-top-color: var(--text-color, #ffffff);
   border-radius: 50%;
-  animation: spin 0.6s linear infinite;
+  animation: spin 0.5s linear infinite;
   flex-shrink: 0;
 }
