@@ -7,7 +7,7 @@ import {
   Trigger,
   Value,
 } from '@radix-ui/react-select';
-import { CaretDownFill } from '../../assets';
+import { CaretDownFillIcon } from '@/shared/assets';
 import s from './Select.module.css';
 
 interface SelectOption {
@@ -27,12 +27,14 @@ export const Select = (props: SelectProps) => {
     <Root>
       <Trigger className={s.trigger}>
         <Value placeholder={placeholder}></Value>
-        <CaretDownFill className={s.icon} />
+        <CaretDownFillIcon className={s.icon} />
       </Trigger>
 
       <Portal>
         <Content
           onCloseAutoFocus={(e) => e.preventDefault()}
+          sideOffset={4}
+          position="popper"
           className={s.content}
         >
           {options &&

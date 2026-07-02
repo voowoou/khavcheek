@@ -8,7 +8,7 @@
   background: none;
   transition: background var(--transition);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 12px;
   line-height: var(--line-height-s);
@@ -39,7 +39,8 @@
 }
 
 .trigger:focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: var(--outline-style);
+  outline-offset: var(--outline-offset);
 }
 
 .trigger[data-placeholder] {
@@ -48,8 +49,6 @@
 
 /* content */
 .content {
-  position: relative;
-  top: 4px;
   border: var(--border-style);
   border-radius: var(--border-radius-m);
   background: var(--color-bg);
